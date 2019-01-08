@@ -2,12 +2,10 @@ import math
 
 while True:
 
-    user = input("This is a calculator what do you wanna do?: multiply, divide, add, subtract, percent, pi, eulier, squere, squere root? m/d/a/s/p/pi/e/sq/sqr ")
+    user = input("This is a calculator what do you wanna do?: multiply, divide, add, subtract, percent, pi, eulier, squere? m/d/a/s/p/pi/e/sq ")
 
     if user == "p":
         print("You count ..% from a value")
-    if user == "sqr":
-        num4 = int(input("Give mi a number "))
 
     num1 = int(input("Give your first number "))
     num2 = int(input("Give your secound number "))
@@ -49,10 +47,6 @@ while True:
         return (num1**2)
     result7 = squere(num1)
 
-    def squereroot(num4,num1,num2):
-        return (num1**2)-4*(num4*num2)
-    result8 = squereroot(num4,num1,num2)
-
 #Below are the command who giving a results
 
     if user == "m":
@@ -71,10 +65,4 @@ while True:
         print("PI result is: ",result6)
     elif user == "sq":
         print("Squere is:",result7)
-    elif user == "sqr":
-        if result8 < 0:
-            print("Delta can't be negative")
-            break
-        else:
-            print(result8)
 
